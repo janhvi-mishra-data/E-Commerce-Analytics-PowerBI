@@ -1,6 +1,10 @@
 # 🛒 E-Commerce Analytics Dashboard | Power BI
 
-![Overview Dashboard](Dashboard%20Screenshots/01_Overview.jpg)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-Measures-0078D4?style=for-the-badge)
+![Power Query](https://img.shields.io/badge/Power_Query-ETL-217346?style=for-the-badge)
+![Star Schema](https://img.shields.io/badge/Data_Model-Star_Schema-6A5ACD?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-2EA44F?style=for-the-badge)
 
 An end-to-end **Business Intelligence** project developed using **Power BI**, **Power Query**, and **DAX** to analyze the **Olist Brazilian E-Commerce Public Dataset**. The project transforms raw transactional data into interactive dashboards, providing actionable insights into sales performance, customer behavior, product analytics, seller performance, and customer satisfaction.
 
