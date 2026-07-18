@@ -1,38 +1,40 @@
 # 🛒 E-Commerce Analytics Dashboard | Power BI
 
-An end-to-end Business Intelligence project built using **Power BI**, **Power Query**, **DAX**, and the **Olist Brazilian E-Commerce Dataset**.
-
-The project transforms raw transactional data into interactive dashboards that provide insights into sales performance, customer behavior, seller performance, product analytics, and customer reviews through an interactive multi-page Power BI report.
-
----
-
-# 📌 Dashboard Overview
-
 ![Overview Dashboard](Dashboard%20Screenshots/01_Overview.jpg)
 
+An end-to-end **Business Intelligence** project developed using **Power BI**, **Power Query**, and **DAX** to analyze the **Olist Brazilian E-Commerce Public Dataset**. The project transforms raw transactional data into interactive dashboards, providing actionable insights into sales performance, customer behavior, product analytics, seller performance, and customer satisfaction.
+
 ---
 
-# 🎯 Project Objective
+# 📌 Project Overview
 
-The objective of this project is to analyze an e-commerce business from multiple business perspectives and answer key questions such as:
+This project presents a complete Business Intelligence solution for analyzing an e-commerce business. It demonstrates the entire analytics workflow—from data cleaning and transformation to data modeling, DAX calculations, and interactive dashboard development.
+
+The solution follows a **Star Schema** architecture and consists of **five interactive dashboard pages**, enabling stakeholders to monitor business performance, identify trends, evaluate operational efficiency, and support data-driven decision-making.
+
+---
+
+# 🎯 Project Objectives
+
+This dashboard helps answer important business questions, including:
 
 - Which product categories generate the highest revenue?
+- Which categories sell the most products?
 - Which states contribute the highest sales?
 - Which sellers perform the best?
-- What is customer purchasing behavior?
-- How do customer reviews impact business performance?
+- How do customers behave across different regions?
+- How do customer reviews reflect business performance?
 - What sales trends can be observed over time?
 
 ---
 
-# 🛠 Tech Stack
+# 🛠️ Tech Stack
 
-- Power BI Desktop
+- Microsoft Power BI Desktop
 - Power Query
-- DAX
-- Star Schema Data Modeling
+- DAX (Data Analysis Expressions)
 - Microsoft Excel
-- Olist Brazilian E-Commerce Dataset
+- Star Schema Data Modeling
 
 ---
 
@@ -40,39 +42,44 @@ The objective of this project is to analyze an e-commerce business from multiple
 
 **Source:** Olist Brazilian E-Commerce Public Dataset
 
-The dataset includes:
+The project is built using the Olist dataset, which contains information related to:
 
 - Customers
 - Orders
 - Order Items
 - Products
 - Sellers
-- Reviews
 - Payments
+- Reviews
 - Geolocation
+
+> **Note:** The original dataset is **not included** in this repository due to its large size.
+
+**Dataset Source:**  
+https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 
 ---
 
 # 🧹 Data Preparation
 
-Data cleaning and transformation were performed using **Power Query**.
+Data preprocessing and transformation were performed using **Power Query**.
 
-Major preprocessing steps include:
+Key transformation steps include:
 
 - Removed duplicate records
 - Handled missing values
 - Changed data types
 - Merged required tables
-- Built a Star Schema
 - Created calculated columns
+- Built a Star Schema data model
 - Developed DAX measures
-- Optimized the data model
+- Optimized the data model for reporting
 
 ---
 
 # ⭐ Data Model
 
-A Star Schema was implemented consisting of:
+The project follows a **Star Schema** architecture consisting of Fact and Dimension tables to improve report performance and simplify analysis.
 
 ### Fact Tables
 
@@ -90,15 +97,15 @@ A Star Schema was implemented consisting of:
 - Date
 - Geolocation
 
-📄 The complete data model is available in:
+📄 The complete documentation, including the **Project Summary, Schema Overview, Data Dictionary, Data Cleaning Log, Data Model, Dashboard Pages, and DAX Measures**, is available in:
 
-**Documentation → Data_Model.png**
+**Documentation → Ecommerce_Project_Documentation.xlsx**
 
 ---
 
 # 📊 Dashboard Pages
 
-## 1️⃣ Executive Dashboard
+## 📈 1. Executive Dashboard
 
 Provides a complete overview of business performance.
 
@@ -120,13 +127,13 @@ Provides a complete overview of business performance.
 
 ### Preview
 
-![Overview Dashboard](Dashboard%20Screenshots/01_Overview.jpg)
+![Executive Dashboard](Dashboard%20Screenshots/01_Overview.jpg)
 
 ---
 
-## 2️⃣ Product Intelligence Dashboard
+## 📦 2. Product Intelligence Dashboard
 
-Analyzes product performance and category insights.
+Analyzes product pricing and category performance.
 
 ### KPIs
 
@@ -148,9 +155,9 @@ Analyzes product performance and category insights.
 
 ---
 
-## 3️⃣ Customer Intelligence Dashboard
+## 👥 3. Customer Intelligence Dashboard
 
-Provides customer demographics and purchasing insights.
+Analyzes customer behavior and geographical distribution.
 
 ### KPIs
 
@@ -162,7 +169,7 @@ Provides customer demographics and purchasing insights.
 ### Visuals
 
 - Revenue by Customer State
-- Customer Distribution Map
+- Customer Distribution
 - Customer State Performance
 - Top Customer States
 
@@ -172,9 +179,9 @@ Provides customer demographics and purchasing insights.
 
 ---
 
-## 4️⃣ Seller Intelligence Dashboard
+## 🏪 4. Seller Intelligence Dashboard
 
-Evaluates seller performance across different regions.
+Evaluates seller performance and logistics efficiency.
 
 ### KPIs
 
@@ -192,13 +199,13 @@ Evaluates seller performance across different regions.
 
 ### Preview
 
-![Sellers Dashboard](Dashboard%20Screenshots/04_Sellers.jpg)
+![Seller Dashboard](Dashboard%20Screenshots/04_Sellers.jpg)
 
 ---
 
-## 5️⃣ Review Intelligence Dashboard
+## ⭐ 5. Review Intelligence Dashboard
 
-Analyzes customer satisfaction and review trends.
+Analyzes customer satisfaction using review data.
 
 ### KPIs
 
@@ -216,7 +223,7 @@ Analyzes customer satisfaction and review trends.
 
 ### Preview
 
-![Reviews Dashboard](Dashboard%20Screenshots/05_Reviews.jpg)
+![Review Dashboard](Dashboard%20Screenshots/05_Reviews.jpg)
 
 ---
 
@@ -226,25 +233,60 @@ Analyzes customer satisfaction and review trends.
 - Cross-filtering
 - Dynamic KPI Cards
 - Executive Insights
-- Responsive Dashboard Layout
-- Business-oriented UI
 - Multi-page navigation
 - Drill-down enabled visuals
+- Responsive dashboard layout
+- Professional business reporting design
+
+---
+
+# 📥 Power BI Dashboard
+
+The complete **Power BI (.pbix)** dashboard is hosted on **Google Drive** due to GitHub's file size limitations.
+
+**📂 Download Here:**  
+https://drive.google.com/drive/folders/1AUmkHGm_dK0PQWm_1weuOroy97x2Yt07?usp=drive_link
+
+> **Note:** The Google Drive folder contains the complete Power BI dashboard and supporting project files.
 
 ---
 
 # 📁 Repository Structure
 
-```
-E-Commerce-Analytics-Dashboard/
+```text
+E-Commerce-Analytics-PowerBI/
 │
 ├── Dashboard Screenshots/
-├── Data/
+│   ├── 01_Overview.jpg
+│   ├── 02_Products.jpg
+│   ├── 03_Customers.jpg
+│   ├── 04_Sellers.jpg
+│   └── 05_Reviews.jpg
+│
 ├── Documentation/
+│   └── Ecommerce_Project_Documentation.xlsx
+│
 ├── Power BI/
+│
 ├── README.md
 └── LICENSE
 ```
+
+---
+
+# 📄 Documentation
+
+The repository includes detailed project documentation covering:
+
+- 📌 Project Summary
+- 🗂️ Schema Overview
+- 📖 Data Dictionary
+- 🧹 Data Cleaning Log
+- ⭐ Star Schema Data Model
+- 📊 Dashboard Pages
+- 📈 DAX Measures
+
+The documentation provides a complete understanding of the project's data architecture, transformation process, business logic, and dashboard development.
 
 ---
 
@@ -253,21 +295,21 @@ E-Commerce-Analytics-Dashboard/
 - End-to-End Business Intelligence Project
 - Interactive Multi-page Dashboard
 - Star Schema Data Modeling
-- Power Query Data Cleaning
+- Data Cleaning using Power Query
 - Advanced DAX Calculations
-- Professional Dashboard Design
 - Business KPI Tracking
-- Executive Reporting
+- Executive-Level Reporting
+- Professional Dashboard Design
 
 ---
 
 # 🚀 Future Improvements
 
-- SQL Data Extraction Pipeline
-- Power BI Service Deployment
+- SQL-based business analysis
+- Power BI Service deployment
 - Incremental Refresh
-- Row Level Security (RLS)
-- Forecasting using Power BI
+- Row-Level Security (RLS)
+- Predictive sales forecasting
 
 ---
 
@@ -275,16 +317,18 @@ E-Commerce-Analytics-Dashboard/
 
 ## Janhvi Mishra
 
-Computer Engineering Student | Aspiring Data Analyst | Power BI Developer
+**Computer Engineering Student | Aspiring Data Analyst | Business Intelligence Enthusiast**
 
-### LinkedIn
+🔗 **LinkedIn**  
+https://www.linkedin.com/in/janhvi-mishra-4ab72328a
 
-[https://www.linkedin.com/in/janhvi-mishra/](https://www.linkedin.com/in/janhvi-mishra-4ab72328a)
-
-### GitHub
-
-[https://github.com/janhvi-mishra-data](https://github.com/janhvi-mishra-data)
+💻 **GitHub**  
+https://github.com/janhvi-mishra-data
 
 ---
 
-⭐ If you found this project helpful, consider giving it a star!
+## ⭐ Support
+
+If you found this project helpful, consider giving this repository a **Star ⭐**.
+
+Thank you for visiting!
