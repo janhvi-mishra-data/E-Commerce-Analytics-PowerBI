@@ -2,12 +2,12 @@
 
 <p align="left">
 
-![SQL](https://img.shields.io/badge/SQL-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![Power Query](https://img.shields.io/badge/Power_Query-ETL-217346?style=for-the-badge)
-![DAX](https://img.shields.io/badge/DAX-Measures-0078D4?style=for-the-badge)
-![Star Schema](https://img.shields.io/badge/Data_Model-Star_Schema-6A5ACD?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-2EA44F?style=for-the-badge)
+<img src="https://img.shields.io/badge/SQL-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+<img src="https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"/>
+<img src="https://img.shields.io/badge/Power_Query-ETL-217346?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/DAX-Measures-0078D4?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Data_Model-Star_Schema-6A5ACD?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/License-MIT-2EA44F?style=for-the-badge"/>
 
 </p>
 
@@ -15,11 +15,11 @@
 
 ## 📌 Overview
 
-This project presents an **end-to-end Business Intelligence solution** built using **SQL, Power BI, Power Query, and DAX** on the **Olist Brazilian E-Commerce Dataset**.
+This project presents an **end-to-end Business Intelligence solution** built using **SQL, Power BI, Power Query, and DAX** on the **Olist Brazilian E-Commerce Public Dataset**.
 
-It demonstrates the complete analytics lifecycle—from importing raw transactional data to performing SQL-based business analysis, designing a Star Schema data model, developing DAX measures, and creating executive dashboards for business decision-making.
+It demonstrates the complete analytics lifecycle—from cleaning and exploring raw transactional data using SQL to transforming data with Power Query, designing a Star Schema, developing DAX measures, and building interactive Power BI dashboards for business decision-making.
 
-The project focuses on helping stakeholders understand sales performance, customer behavior, seller efficiency, product performance, logistics, and customer satisfaction through interactive visualizations and analytical reporting.
+The solution enables stakeholders to monitor sales performance, understand customer purchasing behavior, evaluate seller performance, analyze product trends, assess delivery efficiency, and track customer satisfaction through interactive dashboards and KPI reporting.
 
 ---
 
@@ -28,13 +28,13 @@ The project focuses on helping stakeholders understand sales performance, custom
 The dashboard is designed to answer key business questions such as:
 
 - Which product categories generate the highest revenue?
-- Which products contribute the most sales?
-- Which states contribute the highest business revenue?
+- Which products contribute the most revenue?
+- Which customer and seller states contribute the highest sales?
 - Who are the top-performing sellers?
-- What purchasing patterns do customers exhibit?
+- How do customers purchase across different regions?
 - Which payment methods are most preferred?
-- How long does delivery typically take?
-- What trends can be observed over time?
+- How efficiently are orders delivered?
+- What sales trends can be observed over time?
 - How do customer reviews reflect business performance?
 
 ---
@@ -46,9 +46,9 @@ The dashboard is designed to answer key business questions such as:
 | Database | MySQL |
 | Business Intelligence | Microsoft Power BI |
 | Data Transformation | Power Query |
-| Analytics | DAX |
-| Spreadsheet | Microsoft Excel |
 | Data Modeling | Star Schema |
+| Analytics | DAX (Data Analysis Expressions) |
+| Spreadsheet | Microsoft Excel |
 | Version Control | Git & GitHub |
 
 ---
@@ -57,7 +57,7 @@ The dashboard is designed to answer key business questions such as:
 
 **Dataset Used:** Olist Brazilian E-Commerce Public Dataset
 
-The dataset contains information regarding:
+The dataset includes transactional and customer information across the following entities:
 
 - Customers
 - Orders
@@ -69,9 +69,21 @@ The dataset contains information regarding:
 - Product Categories
 - Geolocation
 
-> **Note:** The original dataset is not uploaded to this repository due to GitHub's file size limitations.
+### 📊 Dataset Summary
 
-**Dataset Source**
+| Metric | Value |
+|---------|------:|
+| Orders | 99,441 |
+| Customers | 96,096 |
+| Products | 32,951 |
+| Sellers | 3,095 |
+| Payments | 103K+ |
+| Reviews | 99K+ |
+| Product Categories | 71 |
+
+> **Note:** The original dataset is not included in this repository because of GitHub's file size limitations.
+
+### Dataset Source
 
 https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 
@@ -79,40 +91,40 @@ https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 
 # 🧹 Data Preparation
 
-The data was cleaned and transformed using **Power Query** before creating dashboards.
+The data was cleaned, validated, transformed, and optimized before dashboard development.
 
-Major preprocessing steps include:
+Key preprocessing steps include:
 
 - Removed duplicate records
 - Handled missing values
 - Standardized data types
+- Validated data quality
 - Merged relational datasets
 - Created calculated columns
-- Built a Star Schema
-- Optimized relationships
+- Built a Star Schema data model
 - Developed reusable DAX measures
-- Prepared data for dashboard reporting
+- Optimized the model for reporting performance
 
 ---
 
-# 🗄 SQL Analysis
+# 💻 SQL Analysis
 
-Before building the Power BI dashboard, business insights were explored using **MySQL**.
+Before building the Power BI dashboard, the dataset was explored and analyzed using **MySQL** to extract business insights and validate data quality.
 
 The SQL workflow includes:
 
 - Data Cleaning
 - Data Validation
-- Exploratory Data Analysis
+- Exploratory Data Analysis (EDA)
 - Business Analysis
 - Advanced SQL Analytics
 
-The project demonstrates practical use of:
+The project demonstrates practical usage of:
 
 - Joins
 - Aggregate Functions
 - CASE Statements
-- CTEs
+- Common Table Expressions (CTEs)
 - Window Functions
 - Ranking Functions
 - Date Functions
@@ -122,7 +134,7 @@ The project demonstrates practical use of:
 
 # ⭐ Data Model
 
-The dashboard follows a **Star Schema** architecture to improve performance and simplify analytical reporting.
+The project follows a **Star Schema** architecture to improve analytical performance and simplify business reporting.
 
 ## Fact Tables
 
@@ -146,7 +158,7 @@ The dashboard follows a **Star Schema** architecture to improve performance and 
 - Schema Overview
 - Data Dictionary
 - Data Cleaning Log
-- Data Model
+- Star Schema Data Model
 - Dashboard Pages
 - DAX Measures
 
@@ -160,7 +172,7 @@ is available in:
 
 ## 📈 Executive Dashboard
 
-Provides a high-level overview of business performance.
+Provides a comprehensive overview of overall business performance through executive KPIs and interactive visualizations.
 
 ### KPIs
 
@@ -173,7 +185,7 @@ Provides a high-level overview of business performance.
 
 ### Visuals
 
-- Revenue Trend
+- Revenue Trend by Month
 - Revenue by Product Category
 - Monthly Orders
 - Order Status Distribution
@@ -186,7 +198,7 @@ Provides a high-level overview of business performance.
 
 ## 📦 Product Intelligence Dashboard
 
-Provides insights into product pricing and category performance.
+Analyzes product performance, pricing trends, and category-wise sales insights.
 
 ### KPIs
 
@@ -197,10 +209,10 @@ Provides insights into product pricing and category performance.
 
 ### Visuals
 
-- Revenue by Category
-- Product Performance
+- Revenue by Product Category
 - Highest Average Product Price
-- Top Selling Categories
+- Category Performance
+- Top Selling Product Categories
 
 ### Preview
 
@@ -210,7 +222,7 @@ Provides insights into product pricing and category performance.
 
 ## 👥 Customer Intelligence Dashboard
 
-Analyzes customer purchasing behavior and geographical distribution.
+Provides insights into customer purchasing behavior and geographical sales distribution.
 
 ### KPIs
 
@@ -234,7 +246,7 @@ Analyzes customer purchasing behavior and geographical distribution.
 
 ## 🏪 Seller Intelligence Dashboard
 
-Evaluates seller performance, revenue contribution, and logistics efficiency.
+Evaluates seller performance, logistics efficiency, and regional revenue contribution.
 
 ### KPIs
 
@@ -258,7 +270,7 @@ Evaluates seller performance, revenue contribution, and logistics efficiency.
 
 ## ⭐ Review Intelligence Dashboard
 
-Analyzes customer satisfaction and review trends.
+Analyzes customer satisfaction through review scores and feedback trends.
 
 ### KPIs
 
@@ -282,41 +294,46 @@ Analyzes customer satisfaction and review trends.
 
 # 💻 SQL Modules
 
-The repository also contains SQL scripts demonstrating the complete analytical workflow before dashboard development.
+The repository includes structured SQL scripts covering the complete analytical workflow before dashboard development.
 
-| SQL File | Description |
-|----------|-------------|
-| **01_Data_Cleaning.sql** | Data cleaning, validation, null handling, duplicate checks, datatype conversion and integrity verification |
-| **02_Data_Exploration.sql** | Exploratory Data Analysis (EDA), descriptive statistics, data profiling and dataset exploration |
-| **03_Business_Analysis.sql** | Revenue analysis, customer insights, seller performance, payment analysis, logistics insights and KPI calculations |
-| **04_Advanced_SQL.sql** | Common Table Expressions (CTEs), Window Functions, Ranking, Running Totals, Customer Segmentation, Revenue Contribution and Advanced SQL Analytics |
+| SQL Script | Description |
+|------------|-------------|
+| **01_Data_Cleaning.sql** | Data quality checks, duplicate detection, null value analysis, datatype conversion, and data validation |
+| **02_Data_Exploration.sql** | Exploratory Data Analysis (EDA), descriptive statistics, and dataset profiling |
+| **03_Business_Analysis.sql** | Sales analysis, customer insights, seller performance, payment analysis, delivery analysis, and KPI calculations |
+| **04_Advanced_SQL.sql** | Common Table Expressions (CTEs), Window Functions, Ranking Functions, Running Totals, Customer Segmentation, and Revenue Contribution Analysis |
 
 ---
 
 # ✨ Dashboard Features
 
-- Interactive slicers
+- Interactive KPI Cards
+- Executive Business Reporting
+- Multi-page Dashboard Navigation
+- Dynamic Slicers
 - Cross-filtering
-- Dynamic KPI Cards
-- Executive Insights
-- Multi-page navigation
-- Drill-through enabled visuals
-- Responsive dashboard layout
-- Business-oriented reporting
-- Interactive filtering
-- Professional dashboard design
+- Drill-through Analysis
+- Star Schema Data Model
+- Advanced DAX Measures
+- Business-oriented Visualizations
+- Responsive Dashboard Layout
 
 ---
 
 # 📥 Power BI Dashboard
 
-The complete **Power BI (.pbix)** dashboard is hosted on **Google Drive** because GitHub does not allow files larger than 100 MB.
+The complete **Power BI (.pbix)** file is hosted on **Google Drive** because it exceeds GitHub's file size limit.
 
-📂 **Download Power BI Dashboard**
+### 📂 Download Dashboard
+
+**Google Drive**
 
 https://drive.google.com/drive/folders/1AUmkHGm_dK0PQWm_1weuOroy97x2Yt07?usp=drive_link
 
-> The Google Drive folder contains the complete Power BI dashboard along with the supporting project files.
+The folder includes:
+
+- Complete Power BI Dashboard (.pbix)
+- Supporting Project Files
 
 ---
 
@@ -326,11 +343,11 @@ https://drive.google.com/drive/folders/1AUmkHGm_dK0PQWm_1weuOroy97x2Yt07?usp=dri
 End-to-End-E-Commerce-Analytics/
 │
 ├── Dashboard Screenshots/
-│   ├── 01_Overview.jpg
-│   ├── 02_Products.jpg
-│   ├── 03_Customers.jpg
-│   ├── 04_Sellers.jpg
-│   └── 05_Reviews.jpg
+│   ├── 01_Overview.png
+│   ├── 02_Products.png
+│   ├── 03_Customers.png
+│   ├── 04_Sellers.png
+│   └── 05_Reviews.png
 │
 ├── Documentation/
 │   └── Ecommerce_Project_Documentation.xlsx
@@ -342,9 +359,10 @@ End-to-End-E-Commerce-Analytics/
 │   └── 04_Advanced_SQL.sql
 │
 ├── Power BI/
+│   ├── README.md
+│   └── Theme.json
 │
 ├── README.md
-│
 └── LICENSE
 ```
 
@@ -352,17 +370,16 @@ End-to-End-E-Commerce-Analytics/
 
 # 📄 Documentation
 
-The project documentation provides detailed information regarding:
+The project documentation includes:
 
 - 📌 Project Summary
-- 📊 Business Objectives
-- 🗂 Schema Overview
 - 📖 Data Dictionary
+- 🗂 Schema Overview
 - 🧹 Data Cleaning Log
 - ⭐ Star Schema Data Model
-- 📈 Dashboard Pages
-- 📐 DAX Measures
-- 📊 Business KPIs
+- 📊 Dashboard Overview
+- 📈 DAX Measures
+- 📋 Business KPIs
 
 Documentation File:
 
@@ -370,17 +387,7 @@ Documentation File:
 
 ---
 
-# 💼 Key Skills Demonstrated
-
-### Data Analysis
-
-- Exploratory Data Analysis (EDA)
-- Business Analysis
-- KPI Reporting
-- Trend Analysis
-- Customer Analytics
-- Sales Analytics
-- Data Storytelling
+# 💼 Skills Demonstrated
 
 ### SQL
 
@@ -388,49 +395,57 @@ Documentation File:
 - Data Validation
 - Joins
 - Aggregate Functions
-- CTEs
+- CASE Statements
+- Common Table Expressions (CTEs)
 - Window Functions
 - Ranking Functions
-- CASE Statements
 - Date Functions
 
 ### Power BI
 
 - Interactive Dashboard Development
+- Power Query (ETL)
+- Star Schema Data Modeling
 - DAX Measures
-- Power Query
-- Data Modeling
-- Star Schema Design
+- KPI Reporting
 - Drill-through Reports
-- KPI Cards
-- Dynamic Visualizations
+- Data Storytelling
+
+### Business Analytics
+
+- Exploratory Data Analysis (EDA)
+- Customer Analytics
+- Sales Analytics
+- Product Analytics
+- Seller Performance Analysis
+- Business KPI Tracking
+- Executive Reporting
 
 ---
 
 # 📈 Project Highlights
 
-- End-to-End Data Analytics Project
-- SQL-Based Data Cleaning & Business Analysis
-- Interactive Multi-page Power BI Dashboard
-- ETL using Power Query
-- Star Schema Data Modeling
-- Advanced DAX Calculations
-- Business KPI Tracking
-- Executive-Level Reporting
-- Customer, Product & Seller Analytics
-- Professional Dashboard Design
+- ✅ End-to-End Business Intelligence Project
+- ✅ SQL-Based Data Cleaning & Analysis
+- ✅ Interactive Multi-page Power BI Dashboard
+- ✅ ETL using Power Query
+- ✅ Star Schema Data Modeling
+- ✅ Advanced DAX Calculations
+- ✅ Executive KPI Reporting
+- ✅ Customer, Product & Seller Analytics
+- ✅ Professional Dashboard Design
+- ✅ Business-Focused Data Storytelling
 
 ---
 
-# 🚀 Future Improvements
+# 🚀 Future Enhancements
 
-- Power BI Service Deployment
-- Incremental Data Refresh
-- Row-Level Security (RLS)
-- Predictive Sales Forecasting
-- Automated SQL ETL Pipeline
-- Real-time Database Integration
-- Interactive Power BI Web App
+- Deploy dashboard using Power BI Service
+- Configure Incremental Refresh
+- Implement Row-Level Security (RLS)
+- Build Automated SQL ETL Pipelines
+- Integrate Real-time Data Sources
+- Develop Predictive Sales Forecasting Models
 
 ---
 
@@ -440,27 +455,27 @@ Documentation File:
 
 **Computer Engineering Student | Aspiring Data Analyst | Business Intelligence Enthusiast**
 
-📧 Email
+📧 **Email**
 
 mjanhvi0707@gmail.com
 
-🔗 LinkedIn
+🔗 **LinkedIn**
 
 https://www.linkedin.com/in/janhvi-mishra-4ab72328a
 
-💻 GitHub
+💻 **GitHub**
 
 https://github.com/janhvi-mishra-data
 
 ---
 
-# 🤝 Connect With Me
+# 🤝 Let's Connect
 
-I'm always open to discussing:
+I'm always open to discussions about:
 
 - Data Analytics
-- Power BI
 - SQL
+- Power BI
 - Business Intelligence
 - Dashboard Development
 - Data Visualization
@@ -469,12 +484,14 @@ Feel free to connect with me on LinkedIn!
 
 ---
 
-# ⭐ If you found this project helpful...
+# ⭐ Support
 
-Please consider giving this repository a **Star ⭐**.
+If you found this project useful, consider giving it a **Star ⭐**.
 
-It motivates me to continue building more analytics projects and sharing them with the community.
+Your support motivates me to build and share more data analytics projects.
 
 ---
 
-## Thank you for visiting! 🚀
+<p align="center">
+<b>Thank you for visiting! 🚀</b>
+</p>
