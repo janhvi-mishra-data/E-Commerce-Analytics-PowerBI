@@ -180,7 +180,7 @@ Provides a high-level overview of business performance.
 
 ### Preview
 
-![Executive Dashboard](Dashboard%20Screenshots/01_Overview.jpg)
+![Executive Dashboard](Dashboard%20Screenshots/01_Overview.png)
 
 ---
 
@@ -204,7 +204,7 @@ Provides insights into product pricing and category performance.
 
 ### Preview
 
-![Product Dashboard](Dashboard%20Screenshots/02_Products.jpg)
+![Product Dashboard](Dashboard%20Screenshots/02_Products.png)
 
 ---
 
@@ -228,7 +228,7 @@ Analyzes customer purchasing behavior and geographical distribution.
 
 ### Preview
 
-![Customer Dashboard](Dashboard%20Screenshots/03_Customers.jpg)
+![Customer Dashboard](Dashboard%20Screenshots/03_Customers.png)
 
 ---
 
@@ -252,7 +252,7 @@ Evaluates seller performance, revenue contribution, and logistics efficiency.
 
 ### Preview
 
-![Seller Dashboard](Dashboard%20Screenshots/04_Sellers.jpg)
+![Seller Dashboard](Dashboard%20Screenshots/04_Sellers.png)
 
 ---
 
@@ -276,7 +276,7 @@ Analyzes customer satisfaction and review trends.
 
 ### Preview
 
-![Review Dashboard](Dashboard%20Screenshots/05_Reviews.jpg)
+![Review Dashboard](Dashboard%20Screenshots/05_Reviews.png)
 
 ---
 
